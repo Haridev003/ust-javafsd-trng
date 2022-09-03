@@ -22,13 +22,13 @@ public void Showname() {
 	public void Showname() {
 		System.out.println(name);
 		System.out.println(emp_id);
+		super.Showname();
 	}
 	public static void main (String args[]) {
 		EmployeeDetails e = new EmployeeDetails();
 		Engineer e1 = new Engineer();
 		e.getSalary();
 		e.getSalary(1234);
-		e.Showname();
 		e1.Showname();
 		
 		
