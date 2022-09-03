@@ -18,14 +18,14 @@ public void Showname() {
 	System.out.println(name);
 }
 }
- class emp1 extends EmployeeDetails{
+ class Engineer extends EmployeeDetails{
 	public void Showname() {
 		System.out.println(name);
 		System.out.println(emp_id);
 	}
 	public static void main (String args[]) {
 		EmployeeDetails e = new EmployeeDetails();
-		emp1 e1 = new emp1();
+		Engineer e1 = new Engineer();
 		e.getSalary();
 		e.getSalary(1234);
 		e.Showname();
