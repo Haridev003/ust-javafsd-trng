@@ -1,7 +1,7 @@
 package com.ust;
 
 class EmployeeDetails{
-	int emp_id =1234,salary=4;
+	int emp_id =1234,salary=4;//salary in lpa
 	String name="abc",department="delivary",email;
 
 public void getSalary()
