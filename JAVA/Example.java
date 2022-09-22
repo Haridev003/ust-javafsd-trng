@@ -1,22 +1,19 @@
-package com.ust;
+package Testing;
 
-class Example {
-	
-	public static void main(String args[])
-	{
-		char a='G';
-		int i=89;
-		byte b = 4;
-		short s = 56;
-		double d=4.355453532;
-		float f =4.733334f;
-		System.out.println("Char:"+a);
-		System.out.println("integer:"+i);
-		System.out.println("byte:"+b);
-		System.out.println("short"+s);
-		System.out.println("float:"+f);
-		System.out.println("double"+d);
-		
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        
+		List<String> names = Arrays.asList("Jon","Ajeet","Steve","Jon","Ajeet");
+		Map<String,Long> map=names.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		System.out.println(map);
 	}
 
 }
