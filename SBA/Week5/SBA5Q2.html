@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function show(){
+		var Fname= document.getElementById("fname").value;
+		var Lname= document.getElementById("lname").value;
+		var City= document.getElementById("city").value;
+		document.write("Name: ",Fname,Lname,"<br>"," City: ",City);
+	}
+</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Enter details</h1>
+		<form>
+			First Name: <input type="text" id="fname"> <br>
+			Last Name: <input type="text" id="lname" style="margin-left: 2px"> <br>
+			City: <input type="text" id="city" style="margin-left: 44px"> <br>
+			<button onclick="show()">Submit</button>
+		</form>
+	</div>
+</body>

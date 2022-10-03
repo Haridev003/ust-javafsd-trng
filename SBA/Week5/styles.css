@@ -1,0 +1,15 @@
+body{
+    background-color: palegreen;
+}
+.main{
+    text-align: center;
+}
+.new{
+    color: palevioletred;
+    font-size: 50px;
+    font-weight: bold;
+}
+#new1{
+    font-style: bold;
+    font-size: 20px;
+}
