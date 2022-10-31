@@ -2,7 +2,16 @@ package com.ust2;
 
 import java.util.List;
 import java.util.ArrayList;
+
+/**
+ * The type Main 10.
+ */
 class Main_10{
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		List<Integer> numbers = new ArrayList<>();
 		numbers.add(1);
