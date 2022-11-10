@@ -1,0 +1,37 @@
+class Solution
+{
+
+	public int minDifference(int arr[], int n) 
+	{ 
+	    // Your code goes here
+	  int totalSum =0;
+	    for(int a : arr){
+	        
+	    totalSum= totalSum+a;
+	    }
+	    //System.out.println(totalSum);
+	    
+	    int[][] sumMat = new int[n][totalSum+1];
+	    for(int i=0;i<sumMat.length;i++) {
+	        for(int j=0;j<sumMat[i].length;j++){
+	            
+	         sumMat[i][j]=-1;
+	        }
+	    }
+	    
+	    return fmin(arr,0,totalSum,0,sumMat);
+	}
+	
+	public static int fmin(int[] arr,int idx,int totalSum,int sum,int[][] sumMat) {
+	    if(idx>=arr.length) {
+	        return Math.abs((totalSum-sum)-sum);
+	    }
+	    
+	    if(sumMat[idx][sum]!=-1) return sumMat[idx][sum];
+	    
+	    int min1 = fmin(arr,idx+1,totalSum,sum+arr[idx],sumMat);
+	    int min2 = fmin(arr,idx+1,totalSum,sum,sumMat);
+	    
+	    return sumMat[idx][sum]=Math.min(min1,min2);
+	}
+}
